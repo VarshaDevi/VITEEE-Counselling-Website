@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<!-- define angular app -->
+<html ng-app="scotchApp">
+
+<head>
+  <!-- SCROLLS -->
+  <link rel="stylesheet" href="styles/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+
+  <!-- SPELLS -->
+  <script src="bower_components/angular/angular.min.js"></script>
+   <script src="js/angular-route.js"></script>
+  <script src="js/script.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<script src="pqgrid.min.js"></script>
+</head>
+
+<!-- define angular controller -->
+<body ng-controller="mainController">
+
+   <div class="header">
+     <img src="images/New logo-VIT.png" alt="VIT LOGO"/>
+      <ul class="nav nav-pills" margin-top="auto" padding-left="200">
+  <li role="presentation"><a href="#about"><button type="button" class="btn btn-primary btn-lg"> About</button></a></li>
+  <li role="presentation"><a href="#courses"> <button type="button" class="btn btn-primary btn-lg"> Courses</button></a></li>
+  <li role="presentation"><a href="#contact"> <button type="button" class="btn btn-primary btn-lg"> Contact</button></a></li>
+  <li role="presentation"><a href="#counselling"><button type="button" class="btn btn-primary btn-lg">  Counselling Schedule</button></a>
+  <li role="presentation"><a href="#checkstatus"><button type="button" class="btn btn-primary btn-lg">  Check Your Status</button></a>
+</ul>
+  </div>
+
+
+
+  <div id="main">
+  
+    <!-- angular templating -->
+		<!-- this is where content will be injected -->
+    <div ng-view></div>
+    
+  </div>
+  
+  <div class = "footer">
+   <p>&copy; 2014 - VIT Counselling Web Page</p>
+  </div>
+  
+</body>
+
+</html>
